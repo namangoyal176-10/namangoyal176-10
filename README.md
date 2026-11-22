@@ -2,6 +2,14 @@
   <img src="./assets/header.svg" alt="Naman Goyal — Trading Terminal Developer Portfolio" width="100%" />
 </p>
 
+<!-- Live Animated Dynamic Terminal Typing Telemetry -->
+<p align="center">
+  <a href="https://github.com/namangoyal176-10">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=3000&pause=1000&color=00D492&background=080B0A00&center=true&vCenter=true&width=780&lines=const+focus+%3D+%5B%27C%2B%2B+Algorithms%27%2C+%27Applied+AI%2FML%27%2C+%27Full-Stack%27%5D%3B;Quantitative+Mindset+%2B+High-Performance+Software+Engineering;Turning+Algorithmic+Logic+Into+Production-Grade+Systems;Mastering+Data+Structures+%26+Graph+Optimization+in+C%2B%2B;Execution+Speed+%3A%3A+ACID+Compliance+%2B+Sub-100ms+Discovery" alt="Dynamic Terminal Stream" />
+  </a>
+</p>
+
+<!-- Quick Action Telemetry Badges -->
 <p align="center">
   <a href="https://linkedin.com/in/namangoyal176-10">
     <img src="https://img.shields.io/badge/LinkedIn-Naman%20Goyal-00D492?style=for-the-badge&logo=linkedin&logoColor=080B0A&labelColor=121C18" alt="LinkedIn" />
@@ -22,10 +30,12 @@
 ## 📟 EXECUTIVE SUMMARY // PROFILE BRIEF
 
 ```text
-[SESSION_INIT] .................... OK
-[AUTHORIZATION] ................... GRANTED (DESK: QUANT // SYSTEMS // AI-ML)
-[STATION] ......................... AGRA, UTTAR PRADESH, INDIA [27.18° N, 78.01° E]
-[MARKET_STATUS] ................... TRADING HOURS ACTIVE // HIGH GROWTH BIAS
+┌─── [SESSION TELEMETRY] ────────────────────────────────────────────────────────┐
+│  SESSION_INIT .......... OK                 STATION ........ AGRA, IN [27.18°N]│
+│  AUTHORIZATION ......... GRANTED (DESK: QUANT // SYSTEMS // AI-ML)             │
+│  SECURITY_PROTOCOL ..... TLS 1.3 / ENCRYPTED                                    │
+│  MARKET_STATUS ......... TRADING HOURS ACTIVE // HIGH GROWTH BIAS               │
+└────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 I am **Naman Goyal** — a Computer Science undergraduate specializing in **Artificial Intelligence & Machine Learning** at **Mirai School of Technology** in Agra, India.
@@ -38,6 +48,25 @@ I approach software engineering with a quantitative mindset: **disciplined archi
 - ⚙️ **Systems & Backend Engineering:** Architecting server-side APIs, concurrent transactions, and full-stack applications with **Node.js**, **Express.js**, **MongoDB**, and **React**.
 - 📈 **Market & Quant Technology:** Deeply fascinated by financial market mechanics, high-throughput order flow, and trading tech infrastructure.
 - 🌐 **Open Source Citizenship:** Studying and contributing to open-source developer tooling and production repositories.
+
+<!-- Interactive Terminal Diagnostics Box -->
+<details>
+<summary><b>▶ [EXECUTE] DIAGNOSTICS & SYSTEM KERNEL DUMP</b></summary>
+
+<br />
+
+```text
+[0.000124] Booting NG-OS Kernel (x86_64-quant-linux) ...
+[0.000412] Allocating memory heap: 64GB Virtual / Low Latency Lock ... OK
+[0.001092] Compiler target: g++ -O3 -std=c++20 -Wall -Wextra -pedantic
+[0.002410] Testing runtime sockets: TCP/443 ESTABLISHED (ping: 11.2ms)
+[0.003180] Database drivers: Mongoose / MongoDB Atlas Connection POOL ACTIVE
+[0.004210] Vision pipeline: OpenCV / CUDA acceleration READY
+[0.005020] Concurrency check: ACID transactions VERIFIED (0 race conditions detected)
+[0.006190] Status: ALL SUBSYSTEMS NOMINAL. READY FOR PRODUCTION DISPATCH.
+```
+
+</details>
 
 <p align="center">
   <img src="./assets/divider.svg" width="100%" alt="Terminal Divider" />
@@ -182,9 +211,13 @@ const naman = {
   </tr>
 </table>
 
-> **Asset Allocation Notice:**  
-> 🟢 **Daily Production Instruments:** C++, JavaScript, Node.js, Express.js, EJS, HTML/CSS, Git, GitHub, VS Code, Vercel.  
-> 🔵 **Positions Under Strategic Expansion:** Applied Deep Learning Pipelines, OpenCV Computer Vision, React Architecture &amp; MongoDB Modeling.
+### 📈 Capital Allocation Breakdown // Skill Weights
+```text
+C++ / Algorithmic Engine    [████████████████████] 95%  ──  CORE ANCHOR (High-Efficiency STL)
+Full-Stack JavaScript/Node  [█████████████████░░░] 85%  ──  ACTIVE LIQUIDITY (APIs & System Architecture)
+Applied Machine Learning    [██████████████░░░░░░] 70%  ──  GROWTH POSITION (Vision & Forecasting)
+React UI & Modern Client    [██████████████░░░░░░] 70%  ──  EXPANDING STACK (Interactive Dashboards)
+```
 
 <p align="center">
   <img src="./assets/divider.svg" width="100%" alt="Terminal Divider" />
@@ -200,6 +233,9 @@ const naman = {
       <h3>🌾 KisanMitra AI — Agro-Economic Decision Engine</h3>
       <p>An end-to-end decision support platform engineered for smallholder Indian potato and tomato farmers. Combines <b>Deep Learning Computer Vision</b> for precision crop foliar disease detection with <b>Agro-Economic Forecasting</b> to mitigate market volatility and crop vulnerability.</p>
       <p>
+        <code>SPREAD: TIGHT</code> · <code>SECTOR: AGRO-AI</code> · <code>INFERENCE: REALTIME</code>
+      </p>
+      <p>
         <img src="https://img.shields.io/badge/Python-121C18?style=flat-square&logo=python&logoColor=00D492" />
         <img src="https://img.shields.io/badge/Deep%20Learning-121C18?style=flat-square&logoColor=00D492" />
         <img src="https://img.shields.io/badge/Computer%20Vision-121C18?style=flat-square&logoColor=00D492" />
@@ -211,6 +247,9 @@ const naman = {
       <div align="right"><code>$TRAFFIC-OPS</code> · <b>● ACTIVE / PROTOTYPE</b></div>
       <h3>🚦 Smart Traffic Management System</h3>
       <p>Real-time, AI-powered municipal traffic flow optimization system. Uses an <b>Area-Occupancy Computer Vision System (OpenCV &amp; FastAPI)</b> to evaluate true vehicle road mass rather than naive bounding boxes, coupled with <b>NetworkX graph-based routing</b> and a real-time police dashboard.</p>
+      <p>
+        <code>FPS: 30+ REALTIME</code> · <code>VISION: OPENCV</code> · <code>ROUTING: NETWORKX</code>
+      </p>
       <p>
         <img src="https://img.shields.io/badge/OpenCV-121C18?style=flat-square&logo=opencv&logoColor=00D492" />
         <img src="https://img.shields.io/badge/FastAPI-121C18?style=flat-square&logo=fastapi&logoColor=00D492" />
@@ -228,6 +267,9 @@ const naman = {
       <h3>🛡️ RaceProof — Scalable Team Formation Engine</h3>
       <p>High-concurrency team formation platform built for hackathons supporting up to <b>10,000 concurrent participants</b>. Engineered with <b>ACID-compliant state mutations</b> to guarantee <b>zero race conditions</b>, sub-100ms discovery latency, and automated lifecycle management.</p>
       <p>
+        <code>THROUGHPUT: 10K USERS</code> · <code>DISCOVERY: &lt;100MS</code> · <code>RACE CONDITIONS: 0</code>
+      </p>
+      <p>
         <img src="https://img.shields.io/badge/TypeScript-121C18?style=flat-square&logo=typescript&logoColor=00D492" />
         <img src="https://img.shields.io/badge/React-121C18?style=flat-square&logo=react&logoColor=00D492" />
         <img src="https://img.shields.io/badge/ACID%20Engine-121C18?style=flat-square&logoColor=00D492" />
@@ -240,6 +282,9 @@ const naman = {
       <div align="right"><code>$MERN-CMS</code> · <b>● FULL-STACK MERN</b></div>
       <h3>🎓 Course Management System</h3>
       <p>Enterprise full-stack academic catalog with <b>JSON Web Token (JWT) authentication</b> and <b>Role-Based Access Control (RBAC)</b>. Features an administrative CRUD suite, dynamic course creation modals, student enrollment views, and RESTful API endpoints.</p>
+      <p>
+        <code>AUTH: JWT + RBAC</code> · <code>ARCHITECTURE: MERN</code> · <code>MODALS: DYNAMIC</code>
+      </p>
       <p>
         <img src="https://img.shields.io/badge/MongoDB-121C18?style=flat-square&logo=mongodb&logoColor=00D492" />
         <img src="https://img.shields.io/badge/Express-121C18?style=flat-square&logo=express&logoColor=00D492" />
@@ -257,6 +302,9 @@ const naman = {
       <h3>⚡ Pokédex Explorer</h3>
       <p>Responsive client-side exploration web app powered by <b>React</b> and <b>React Router DOM</b>. Integrates with the PokeAPI to provide real-time search filtering, dynamic route matching, detailed base stat visualizers, and responsive card layouts.</p>
       <p>
+        <code>ROUTING: CLIENT SPA</code> · <code>CACHE: POKEAPI</code> · <code>BUILD: VITE</code>
+      </p>
+      <p>
         <img src="https://img.shields.io/badge/React-121C18?style=flat-square&logo=react&logoColor=00D492" />
         <img src="https://img.shields.io/badge/Vite-121C18?style=flat-square&logo=vite&logoColor=00D492" />
         <img src="https://img.shields.io/badge/React%20Router-121C18?style=flat-square&logo=reactrouter&logoColor=00D492" />
@@ -269,6 +317,9 @@ const naman = {
       <div align="right"><code>$LIB-OPS</code> · <b>● PRODUCTION // LIVE</b></div>
       <h3>📚 Library Inventory &amp; CRUD Engine</h3>
       <p>Server-rendered inventory and catalog management application built with <b>Node.js</b>, <b>Express.js</b>, <b>MongoDB</b>, and <b>EJS</b>. Supports complete lifecycle operations (Create, Read, Update, Delete), multi-criteria book search, and inventory ledger persistence.</p>
+      <p>
+        <code>SSR: EJS ENGINE</code> · <code>STORAGE: MONGODB ATLAS</code> · <code>OPS: FULL CRUD</code>
+      </p>
       <p>
         <img src="https://img.shields.io/badge/Node.js-121C18?style=flat-square&logo=nodedotjs&logoColor=00D492" />
         <img src="https://img.shields.io/badge/Express-121C18?style=flat-square&logo=express&logoColor=00D492" />
@@ -286,6 +337,9 @@ const naman = {
       <div align="right"><code>$DSA-CORE</code> · <b>● CONTINUOUS ACCUMULATION</b></div>
       <h3>🧩 Data Structures &amp; Algorithms in C++</h3>
       <p>Systematic implementation and practice of core algorithmic patterns and data structures in <b>modern C++</b>, completed through rigorous coursework at Mirai School of Technology. Includes custom implementations of dynamic memory structures, pointers, recursion, tree structures, sorting algorithms, and complexity analysis.</p>
+      <p>
+        <code>PARADIGM: STL &amp; POINTERS</code> · <code>TIME COMPLEXITY: OPTIMIZED</code> · <code>CURRICULUM: MIRAI</code>
+      </p>
       <p>
         <img src="https://img.shields.io/badge/C%2B%2B-121C18?style=flat-square&logo=cplusplus&logoColor=00D492" />
         <img src="https://img.shields.io/badge/Data%20Structures-121C18?style=flat-square&logoColor=00D492" />

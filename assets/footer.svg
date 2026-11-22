@@ -21,18 +21,48 @@
 
   <style>
     .mono-ft { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", monospace; }
+
+    @keyframes radarPingFt {
+      0% { r: 4px; opacity: 1; }
+      100% { r: 15px; opacity: 0; }
+    }
+    .footer-ping {
+      animation: radarPingFt 2.2s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+      transform-origin: 48px 38px;
+    }
+
+    @keyframes beamSweep {
+      0% { stroke-dashoffset: 1200; }
+      100% { stroke-dashoffset: -1200; }
+    }
+    .beam-line {
+      stroke-dasharray: 200 1000;
+      animation: beamSweep 4s linear infinite;
+    }
+
+    @keyframes mantraGlow {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 1; filter: drop-shadow(0 0 4px #00D492); }
+    }
+    .mantra {
+      animation: mantraGlow 3s ease-in-out infinite;
+    }
   </style>
 
   <!-- Frame Background -->
   <rect x="1" y="1" width="1198" height="118" rx="12" fill="url(#footerBg)" stroke="#26362F" stroke-width="1.2" />
 
-  <!-- Top Accent Glowing Line -->
-  <line x1="10" y1="2" x2="1190" y2="2" stroke="url(#glowLine)" stroke-width="2" filter="url(#fGlow)" />
+  <!-- Base Accent Line -->
+  <line x1="10" y1="2" x2="1190" y2="2" stroke="url(#glowLine)" stroke-width="1.5" />
 
-  <!-- Terminal Status Line -->
+  <!-- Moving Laser Beam Across Top -->
+  <line x1="10" y1="2" x2="1190" y2="2" stroke="#00D492" stroke-width="2.5" class="beam-line" filter="url(#fGlow)" />
+
+  <!-- Terminal Status Line with Pulse -->
   <g transform="translate(48, 42)">
+    <circle cx="0" cy="-4" r="4" fill="none" stroke="#00D492" stroke-width="1.5" class="footer-ping" />
     <circle cx="0" cy="-4" r="4" fill="#00D492" filter="url(#fGlow)" />
-    <text x="14" y="0" class="mono-ft" font-size="12" fill="#91A39A">
+    <text x="16" y="0" class="mono-ft" font-size="12" fill="#91A39A">
       TERMINAL STATUS: <tspan fill="#00D492" font-weight="700">ONLINE // SYSTEM READY FOR DISPATCH</tspan>
     </text>
   </g>
@@ -48,7 +78,7 @@
   <line x1="48" y1="62" x2="1152" y2="62" stroke="#26362F" stroke-width="1" stroke-dasharray="4 4" opacity="0.6" />
 
   <!-- Bottom Quote & Ticker Summary -->
-  <g transform="translate(48, 92)">
+  <g transform="translate(48, 92)" class="mantra">
     <text x="0" y="0" class="mono-ft" font-size="12" fill="#F1F5F3" font-weight="700" letter-spacing="1">
       CODE <tspan fill="#00D492">▲</tspan> · BUILD <tspan fill="#00D492">▲</tspan> · LEARN <tspan fill="#00D492">▲</tspan> · REPEAT <tspan fill="#00D492">100%</tspan>
     </text>
