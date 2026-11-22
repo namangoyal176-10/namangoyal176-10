@@ -1,0 +1,327 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B0A" />
+      <stop offset="60%" stop-color="#0B110F" />
+      <stop offset="100%" stop-color="#101715" />
+    </linearGradient>
+
+    <!-- Topbar Gradient -->
+    <linearGradient id="topbarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#101715" />
+      <stop offset="100%" stop-color="#0E1513" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="terminalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#26362F" stroke-width="0.75" stroke-opacity="0.28" />
+      <circle cx="40" cy="40" r="1" fill="#00D492" fill-opacity="0.25" />
+    </pattern>
+
+    <!-- Chart Glow Filter -->
+    <filter id="greenGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Candle Glow Filters -->
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", "Courier New", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .title-name { font-weight: 800; letter-spacing: 3px; fill: #F1F5F3; }
+    .subtitle { font-weight: 600; letter-spacing: 2px; fill: #00D492; }
+    .meta-tag { font-size: 11px; fill: #91A39A; letter-spacing: 1px; }
+    .ticker-val { font-weight: 700; fill: #00D492; }
+    .ticker-lbl { fill: #91A39A; font-weight: 600; }
+  </style>
+
+  <!-- Terminal Window Outer Frame -->
+  <rect x="1" y="1" width="1198" height="418" rx="14" fill="url(#bgGrad)" stroke="#26362F" stroke-width="1.5" />
+
+  <!-- Terminal Grid Pattern Overlay -->
+  <rect x="2" y="42" width="1196" height="326" fill="url(#terminalGrid)" />
+
+  <!-- Window Header / Title Bar -->
+  <path d="M 2 15 Q 2 2 15 2 L 1185 2 Q 1198 2 1198 15 L 1198 42 L 2 42 Z" fill="url(#topbarGrad)" stroke="#26362F" stroke-width="1" />
+  <line x1="2" y1="42" x2="1198" y2="42" stroke="#26362F" stroke-width="1" />
+
+  <!-- Window Control Buttons (Terminal Traffic Lights) -->
+  <circle cx="28" cy="22" r="5" fill="#FF5364" />
+  <circle cx="46" cy="22" r="5" fill="#E5B942" />
+  <circle cx="64" cy="22" r="5" fill="#00D492" />
+
+  <!-- Terminal Session Header Info -->
+  <text x="96" y="26" class="mono" font-size="12" fill="#91A39A">
+    TERMINAL // <tspan fill="#F1F5F3" font-weight="700">NG-WORKSTATION_V2.6</tspan> — PORTFOLIO_ORDER_FLOW
+  </text>
+
+  <!-- Top Bar Right Telemetry -->
+  <g transform="translate(860, 14)">
+    <!-- Latency / Status -->
+    <circle cx="10" cy="8" r="4" fill="#00D492" filter="url(#softGlow)" />
+    <text x="22" y="12" class="mono" font-size="11" fill="#00D492" font-weight="700">LIVE FEED</text>
+    <text x="100" y="12" class="mono" font-size="11" fill="#91A39A">RTT: <tspan fill="#F1F5F3">11.4ms</tspan></text>
+    <text x="180" y="12" class="mono" font-size="11" fill="#91A39A">FEED: <tspan fill="#00D492">STABLE</tspan></text>
+    <text x="270" y="12" class="mono" font-size="11" fill="#91A39A">SYS: <tspan fill="#00A878">READY</tspan></text>
+  </g>
+
+  <!-- ================= LEFT HERO: BRAND & PROFILE ================= -->
+  
+  <!-- Monogram Brand Badge (NG) -->
+  <g transform="translate(48, 72)">
+    <!-- Shield / Hexagon Frame -->
+    <rect x="0" y="0" width="76" height="76" rx="14" fill="#121C18" stroke="#26362F" stroke-width="1.5" />
+    <rect x="4" y="4" width="68" height="68" rx="10" fill="#080B0A" stroke="#00D492" stroke-width="1" stroke-opacity="0.4" />
+    
+    <!-- Geometric NG Monogram -->
+    <text x="38" y="47" text-anchor="middle" class="mono" font-size="30" font-weight="900" fill="#00D492" letter-spacing="1">NG</text>
+    <circle cx="60" cy="18" r="3" fill="#00D492" />
+  </g>
+
+  <!-- Security / Role Tag -->
+  <g transform="translate(140, 74)">
+    <rect x="0" y="0" width="220" height="22" rx="4" fill="#121C18" stroke="#26362F" stroke-width="1" />
+    <circle cx="12" cy="11" r="3.5" fill="#00D492" />
+    <text x="24" y="15" class="mono meta-tag">DESK: QUANT / DEV / AI-ML</text>
+  </g>
+
+  <!-- Main Name Typography -->
+  <text x="140" y="140" class="sans title-name" font-size="52">NAMAN GOYAL</text>
+
+  <!-- Terminal Prompt Subtitle -->
+  <g transform="translate(142, 168)">
+    <rect x="-6" y="-14" width="490" height="25" rx="4" fill="#121C18" fill-opacity="0.7" stroke="#26362F" stroke-width="0.8" />
+    <text x="6" y="3" class="mono subtitle" font-size="11.5">
+      AI/ML STUDENT  |  DEVELOPER  |  PROBLEM SOLVER  |  TRADING ENTHUSIAST
+    </text>
+  </g>
+
+  <!-- Technical Spec Summary Block -->
+  <g transform="translate(50, 220)">
+    <!-- Container Card -->
+    <rect x="0" y="0" width="460" height="126" rx="8" fill="#121C18" fill-opacity="0.85" stroke="#26362F" stroke-width="1.2" />
+    
+    <!-- Header of card -->
+    <line x1="0" y1="28" x2="460" y2="28" stroke="#26362F" stroke-width="0.8" />
+    <text x="16" y="19" class="mono" font-size="10.5" fill="#91A39A" font-weight="700">SPECIFICATION // TELEMETRY</text>
+    <text x="375" y="19" class="mono" font-size="10" fill="#00D492">VERIFIED ●</text>
+
+    <!-- Field 1: Education -->
+    <text x="16" y="49" class="mono" font-size="11" fill="#91A39A">EDUCATION</text>
+    <text x="135" y="49" class="mono" font-size="11" fill="#F1F5F3" font-weight="600">B.Tech CSE (AI/ML Specialization)</text>
+
+    <!-- Field 2: Institution -->
+    <text x="16" y="73" class="mono" font-size="11" fill="#91A39A">INSTITUTE</text>
+    <text x="135" y="73" class="mono" font-size="11" fill="#F1F5F3" font-weight="600">Mirai School of Technology</text>
+
+    <!-- Field 3: Location -->
+    <text x="16" y="97" class="mono" font-size="11" fill="#91A39A">LOCATION</text>
+    <text x="135" y="97" class="mono" font-size="11" fill="#F1F5F3" font-weight="600">Agra, Uttar Pradesh, India [27.18°N]</text>
+
+    <!-- Field 4: Strategy Focus -->
+    <text x="16" y="121" class="mono" font-size="11" fill="#91A39A">FOCUS</text>
+    <text x="135" y="121" class="mono" font-size="11" fill="#00D492" font-weight="600">DSA (C++) · Systems · Full-Stack · Trading Tech</text>
+  </g>
+
+  <!-- ================= RIGHT HERO: FINANCIAL CANDLESTICK CHART ================= -->
+
+  <g transform="translate(540, 56)">
+    <!-- Chart Background Glass Box -->
+    <rect x="0" y="0" width="612" height="290" rx="10" fill="#101715" fill-opacity="0.85" stroke="#26362F" stroke-width="1.2" />
+
+    <!-- Chart Header -->
+    <rect x="0" y="0" width="612" height="32" rx="10" fill="#121C18" />
+    <path d="M 0 22 L 0 32 L 612 32 L 612 22 Z" fill="#121C18" />
+    <line x1="0" y1="32" x2="612" y2="32" stroke="#26362F" stroke-width="1" />
+    
+    <!-- Chart Title & Instrument -->
+    <text x="18" y="21" class="mono" font-size="12" fill="#F1F5F3" font-weight="700">INSTRUMENT: <tspan fill="#00D492">$DEV_GROWTH</tspan> · 1D</text>
+    <text x="260" y="21" class="mono" font-size="11" fill="#91A39A">EMA(20): <tspan fill="#00D492">2,842.15</tspan></text>
+    <text x="385" y="21" class="mono" font-size="11" fill="#91A39A">EMA(50): <tspan fill="#00A878">2,710.80</tspan></text>
+    <text x="510" y="21" class="mono" font-size="12" fill="#00D492" font-weight="700">+48.6% ▲</text>
+
+    <!-- Chart Grid Lines & Price Labels -->
+    <g opacity="0.35">
+      <line x1="20" y1="70" x2="550" y2="70" stroke="#26362F" stroke-width="1" stroke-dasharray="3 3" />
+      <line x1="20" y1="120" x2="550" y2="120" stroke="#26362F" stroke-width="1" stroke-dasharray="3 3" />
+      <line x1="20" y1="170" x2="550" y2="170" stroke="#26362F" stroke-width="1" stroke-dasharray="3 3" />
+      <line x1="20" y1="220" x2="550" y2="220" stroke="#26362F" stroke-width="1" stroke-dasharray="3 3" />
+    </g>
+    
+    <!-- Y-Axis Price Scale -->
+    <g class="mono" font-size="9" fill="#91A39A" text-anchor="start">
+      <text x="558" y="73">3,100</text>
+      <text x="558" y="123">2,850</text>
+      <text x="558" y="173">2,600</text>
+      <text x="558" y="223">2,350</text>
+    </g>
+
+    <!-- Moving Average 50 (Secondary curve, slow baseline) -->
+    <path d="M 25 235 Q 120 220 220 185 T 380 150 T 480 120 T 545 105" 
+          fill="none" stroke="#00A878" stroke-width="1.8" stroke-opacity="0.6" stroke-dasharray="4 2" />
+
+    <!-- Moving Average 20 (Primary fast curve) -->
+    <path d="M 25 220 Q 90 205 160 215 T 260 160 T 360 135 T 460 90 T 545 68" 
+          fill="none" stroke="#00D492" stroke-width="2.4" filter="url(#greenGlow)" />
+
+    <!-- ================= CANDLESTICKS ================= -->
+    <!-- Candle 1: Bullish (x=35) -->
+    <line x1="35" y1="200" x2="35" y2="240" stroke="#00D492" stroke-width="1.5" />
+    <rect x="30" y="212" width="10" height="20" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 2: Bullish (x=65) -->
+    <line x1="65" y1="192" x2="65" y2="230" stroke="#00D492" stroke-width="1.5" />
+    <rect x="60" y="202" width="10" height="22" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 3: Bearish Pullback (x=95) -->
+    <line x1="95" y1="195" x2="95" y2="235" stroke="#FF5364" stroke-width="1.5" />
+    <rect x="90" y="206" width="10" height="18" fill="#FF5364" rx="1.5" />
+
+    <!-- Candle 4: Bearish Consolidation (x=125) -->
+    <line x1="125" y1="205" x2="125" y2="242" stroke="#FF5364" stroke-width="1.5" />
+    <rect x="120" y="214" width="10" height="16" fill="#FF5364" rx="1.5" />
+
+    <!-- Candle 5: Bullish Hammer (x=155) -->
+    <line x1="155" y1="195" x2="155" y2="246" stroke="#00D492" stroke-width="1.5" />
+    <rect x="150" y="202" width="10" height="15" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 6: Strong Bullish Impulse (x=185) -->
+    <line x1="185" y1="170" x2="185" y2="216" stroke="#00D492" stroke-width="1.5" />
+    <rect x="180" y="178" width="10" height="28" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 7: Bullish Continuation (x=215) -->
+    <line x1="215" y1="150" x2="215" y2="190" stroke="#00D492" stroke-width="1.5" />
+    <rect x="210" y="158" width="10" height="24" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 8: Minor Bearish Rejection (x=245) -->
+    <line x1="245" y1="152" x2="245" y2="185" stroke="#FF5364" stroke-width="1.5" />
+    <rect x="240" y="160" width="10" height="14" fill="#FF5364" rx="1.5" />
+
+    <!-- Candle 9: Bullish Momentum (x=275) -->
+    <line x1="275" y1="135" x2="275" y2="175" stroke="#00D492" stroke-width="1.5" />
+    <rect x="270" y="142" width="10" height="22" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 10: Bullish Engulfing (x=305) -->
+    <line x1="305" y1="120" x2="305" y2="160" stroke="#00D492" stroke-width="1.5" />
+    <rect x="300" y="128" width="10" height="25" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 11: Bearish Dip / Retest (x=335) -->
+    <line x1="335" y1="128" x2="335" y2="165" stroke="#FF5364" stroke-width="1.5" />
+    <rect x="330" y="136" width="10" height="18" fill="#FF5364" rx="1.5" />
+
+    <!-- Candle 12: High-Volume Rebound (x=365) -->
+    <line x1="365" y1="110" x2="365" y2="152" stroke="#00D492" stroke-width="1.5" />
+    <rect x="360" y="118" width="10" height="24" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 13: Bullish Step (x=395) -->
+    <line x1="395" y1="95" x2="395" y2="135" stroke="#00D492" stroke-width="1.5" />
+    <rect x="390" y="102" width="10" height="22" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 14: Minor Red Wick (x=425) -->
+    <line x1="425" y1="92" x2="425" y2="128" stroke="#FF5364" stroke-width="1.5" />
+    <rect x="420" y="100" width="10" height="12" fill="#FF5364" rx="1.5" />
+
+    <!-- Candle 15: Expansion Green (x=455) -->
+    <line x1="455" y1="72" x2="455" y2="114" stroke="#00D492" stroke-width="1.5" />
+    <rect x="450" y="78" width="10" height="26" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 16: Breakout Green (x=485) -->
+    <line x1="485" y1="58" x2="485" y2="98" stroke="#00D492" stroke-width="1.5" />
+    <rect x="480" y="65" width="10" height="24" fill="#00D492" rx="1.5" />
+
+    <!-- Candle 17: All-Time High Wick (x=515) -->
+    <line x1="515" y1="46" x2="515" y2="88" stroke="#00D492" stroke-width="1.5" />
+    <rect x="510" y="54" width="10" height="22" fill="#00D492" rx="1.5" />
+
+    <!-- Current Price Line & Crosshair Target -->
+    <line x1="20" y1="54" x2="540" y2="54" stroke="#00D492" stroke-width="1.2" stroke-dasharray="2 3" opacity="0.8" />
+    <rect x="546" y="44" width="56" height="20" rx="3" fill="#00D492" />
+    <text x="574" y="58" text-anchor="middle" class="mono" font-size="10" font-weight="800" fill="#080B0A">3,248.50</text>
+
+    <!-- Volume Bars at Bottom -->
+    <g opacity="0.6">
+      <rect x="30" y="260" width="10" height="16" fill="#00D492" />
+      <rect x="60" y="255" width="10" height="21" fill="#00D492" />
+      <rect x="90" y="262" width="10" height="14" fill="#FF5364" />
+      <rect x="120" y="266" width="10" height="10" fill="#FF5364" />
+      <rect x="150" y="258" width="10" height="18" fill="#00D492" />
+      <rect x="180" y="246" width="10" height="30" fill="#00D492" />
+      <rect x="210" y="250" width="10" height="26" fill="#00D492" />
+      <rect x="240" y="264" width="10" height="12" fill="#FF5364" />
+      <rect x="270" y="252" width="10" height="24" fill="#00D492" />
+      <rect x="300" y="244" width="10" height="32" fill="#00D492" />
+      <rect x="330" y="260" width="10" height="16" fill="#FF5364" />
+      <rect x="360" y="248" width="10" height="28" fill="#00D492" />
+      <rect x="390" y="242" width="10" height="34" fill="#00D492" />
+      <rect x="420" y="262" width="10" height="14" fill="#FF5364" />
+      <rect x="450" y="238" width="10" height="38" fill="#00D492" />
+      <rect x="480" y="234" width="10" height="42" fill="#00D492" />
+      <rect x="510" y="228" width="10" height="48" fill="#00D492" />
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM FINANCIAL TICKER TAPE ================= -->
+
+  <!-- Ticker Bar Container -->
+  <g transform="translate(0, 368)">
+    <rect x="1" y="0" width="1198" height="50" rx="0" fill="#101715" stroke="#26362F" stroke-width="1" />
+    <!-- Round bottom corners -->
+    <path d="M 1 0 L 1199 0 L 1199 37 Q 1199 50 1186 50 L 14 50 Q 1 50 1 37 Z" fill="#101715" stroke="#26362F" stroke-width="1" />
+    <line x1="2" y1="0" x2="1198" y2="0" stroke="#26362F" stroke-width="1" />
+
+    <!-- Ticker Section 1: CODE -->
+    <g transform="translate(36, 30)">
+      <circle cx="0" cy="-4" r="3.5" fill="#00D492" />
+      <text x="12" y="0" class="mono ticker-lbl" font-size="12">TICKER: <tspan fill="#F1F5F3" font-weight="700">CODE</tspan></text>
+      <text x="128" y="0" class="mono ticker-val" font-size="12">▲ +18.4%</text>
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="240" y1="12" x2="240" y2="38" stroke="#26362F" stroke-width="1" />
+
+    <!-- Ticker Section 2: BUILD -->
+    <g transform="translate(266, 30)">
+      <circle cx="0" cy="-4" r="3.5" fill="#00D492" />
+      <text x="12" y="0" class="mono ticker-lbl" font-size="12">TICKER: <tspan fill="#F1F5F3" font-weight="700">BUILD</tspan></text>
+      <text x="135" y="0" class="mono ticker-val" font-size="12">▲ +24.8%</text>
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="475" y1="12" x2="475" y2="38" stroke="#26362F" stroke-width="1" />
+
+    <!-- Ticker Section 3: LEARN -->
+    <g transform="translate(501, 30)">
+      <circle cx="0" cy="-4" r="3.5" fill="#00D492" />
+      <text x="12" y="0" class="mono ticker-lbl" font-size="12">TICKER: <tspan fill="#F1F5F3" font-weight="700">LEARN</tspan></text>
+      <text x="135" y="0" class="mono ticker-val" font-size="12">▲ +42.0%</text>
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="710" y1="12" x2="710" y2="38" stroke="#26362F" stroke-width="1" />
+
+    <!-- Ticker Section 4: REPEAT -->
+    <g transform="translate(736, 30)">
+      <circle cx="0" cy="-4" r="3.5" fill="#00D492" />
+      <text x="12" y="0" class="mono ticker-lbl" font-size="12">TICKER: <tspan fill="#F1F5F3" font-weight="700">REPEAT</tspan></text>
+      <text x="145" y="0" class="mono ticker-val" font-size="12">▲ 100.0%</text>
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="950" y1="12" x2="950" y2="38" stroke="#26362F" stroke-width="1" />
+
+    <!-- Terminal Status Tag -->
+    <g transform="translate(974, 30)">
+      <rect x="0" y="-16" width="186" height="24" rx="4" fill="#121C18" stroke="#26362F" stroke-width="1" />
+      <text x="12" y="0" class="mono" font-size="11" fill="#91A39A">
+        STATUS: <tspan fill="#00D492" font-weight="700">MARKET OPEN ●</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
