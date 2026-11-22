@@ -1,92 +1,92 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="100%">
   <defs>
-    <linearGradient id="footerBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#101715" />
-      <stop offset="100%" stop-color="#080B0A" />
+    <linearGradient id="avengerFooterBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#05070e" />
     </linearGradient>
 
-    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#080B0A" stop-opacity="0" />
-      <stop offset="30%" stop-color="#00A878" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#00D492" stop-opacity="1" />
-      <stop offset="70%" stop-color="#00A878" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#080B0A" stop-opacity="0" />
+    <linearGradient id="arcGlowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#05070e" stop-opacity="0" />
+      <stop offset="25%" stop-color="#0284c7" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="1" />
+      <stop offset="75%" stop-color="#ef4444" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#05070e" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="fGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="fArcGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
   <style>
-    .mono-ft { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", monospace; }
+    .hud-mono-ft { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", monospace; }
 
     @keyframes radarPingFt {
       0% { r: 4px; opacity: 1; }
-      100% { r: 15px; opacity: 0; }
+      100% { r: 16px; opacity: 0; }
     }
     .footer-ping {
       animation: radarPingFt 2.2s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
       transform-origin: 48px 38px;
     }
 
-    @keyframes beamSweep {
+    @keyframes footerBeam {
       0% { stroke-dashoffset: 1200; }
       100% { stroke-dashoffset: -1200; }
     }
-    .beam-line {
-      stroke-dasharray: 200 1000;
-      animation: beamSweep 4s linear infinite;
+    .footer-beam-line {
+      stroke-dasharray: 220 980;
+      animation: footerBeam 4s linear infinite;
     }
 
-    @keyframes mantraGlow {
+    @keyframes mantraPulse {
       0%, 100% { opacity: 0.9; }
-      50% { opacity: 1; filter: drop-shadow(0 0 4px #00D492); }
+      50% { opacity: 1; filter: drop-shadow(0 0 6px #00f0ff); }
     }
-    .mantra {
-      animation: mantraGlow 3s ease-in-out infinite;
+    .footer-mantra {
+      animation: mantraPulse 3s ease-in-out infinite;
     }
   </style>
 
   <!-- Frame Background -->
-  <rect x="1" y="1" width="1198" height="118" rx="12" fill="url(#footerBg)" stroke="#26362F" stroke-width="1.2" />
+  <rect x="1" y="1" width="1198" height="118" rx="14" fill="url(#avengerFooterBg)" stroke="#1e293b" stroke-width="1.4" />
 
   <!-- Base Accent Line -->
-  <line x1="10" y1="2" x2="1190" y2="2" stroke="url(#glowLine)" stroke-width="1.5" />
+  <line x1="10" y1="2" x2="1190" y2="2" stroke="url(#arcGlowLine)" stroke-width="1.6" />
 
   <!-- Moving Laser Beam Across Top -->
-  <line x1="10" y1="2" x2="1190" y2="2" stroke="#00D492" stroke-width="2.5" class="beam-line" filter="url(#fGlow)" />
+  <line x1="10" y1="2" x2="1190" y2="2" stroke="#00f0ff" stroke-width="2.6" class="footer-beam-line" filter="url(#fArcGlow)" />
 
-  <!-- Terminal Status Line with Pulse -->
+  <!-- Status Line with Pulse -->
   <g transform="translate(48, 42)">
-    <circle cx="0" cy="-4" r="4" fill="none" stroke="#00D492" stroke-width="1.5" class="footer-ping" />
-    <circle cx="0" cy="-4" r="4" fill="#00D492" filter="url(#fGlow)" />
-    <text x="16" y="0" class="mono-ft" font-size="12" fill="#91A39A">
-      TERMINAL STATUS: <tspan fill="#00D492" font-weight="700">ONLINE // SYSTEM READY FOR DISPATCH</tspan>
+    <circle cx="0" cy="-4" r="4" fill="none" stroke="#00f0ff" stroke-width="1.5" class="footer-ping" />
+    <circle cx="0" cy="-4" r="4" fill="#00f0ff" filter="url(#fArcGlow)" />
+    <text x="16" y="0" class="hud-mono-ft" font-size="12" fill="#94a3b8">
+      STATUS: <tspan fill="#00f0ff" font-weight="700">AVENGERS ASSEMBLED // ALL SYSTEMS OPERATIONAL</tspan>
     </text>
   </g>
 
   <!-- Coordinates / Build Tag -->
   <g transform="translate(1152, 42)" text-anchor="end">
-    <text x="0" y="0" class="mono-ft" font-size="11" fill="#91A39A">
-      STATION: <tspan fill="#F1F5F3">AGRA [27.18°N]</tspan> · LATENCY: <tspan fill="#00D492">&lt;15ms</tspan>
+    <text x="0" y="0" class="hud-mono-ft" font-size="11" fill="#94a3b8">
+      STATION: <tspan fill="#f8fafc">AGRA [27.18°N]</tspan> · CLEARANCE: <tspan fill="#ef4444">LEVEL 7</tspan>
     </text>
   </g>
 
   <!-- Divider inside footer -->
-  <line x1="48" y1="62" x2="1152" y2="62" stroke="#26362F" stroke-width="1" stroke-dasharray="4 4" opacity="0.6" />
+  <line x1="48" y1="62" x2="1152" y2="62" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 4" opacity="0.6" />
 
-  <!-- Bottom Quote & Ticker Summary -->
-  <g transform="translate(48, 92)" class="mantra">
-    <text x="0" y="0" class="mono-ft" font-size="12" fill="#F1F5F3" font-weight="700" letter-spacing="1">
-      CODE <tspan fill="#00D492">▲</tspan> · BUILD <tspan fill="#00D492">▲</tspan> · LEARN <tspan fill="#00D492">▲</tspan> · REPEAT <tspan fill="#00D492">100%</tspan>
+  <!-- Bottom Quote & Mantra -->
+  <g transform="translate(48, 92)" class="footer-mantra">
+    <text x="0" y="0" class="hud-mono-ft" font-size="12" fill="#f8fafc" font-weight="700" letter-spacing="1">
+      WHATEVER IT TAKES · CODE <tspan fill="#00f0ff">⚡</tspan> · BUILD <tspan fill="#ef4444">🛡️</tspan> · SOLVE <tspan fill="#f59e0b">🔮</tspan> · SCALE <tspan fill="#00f0ff">100%</tspan>
     </text>
   </g>
 
   <g transform="translate(1152, 92)" text-anchor="end">
-    <text x="0" y="0" class="mono-ft" font-size="11" fill="#91A39A">
-      ENGINEERED WITH DISCIPLINE &amp; PRECISION // <tspan fill="#F1F5F3">© 2026 NAMAN GOYAL</tspan>
+    <text x="0" y="0" class="hud-mono-ft" font-size="11" fill="#94a3b8">
+      ENGINEERED BY <tspan fill="#f8fafc">NAMAN GOYAL</tspan> // <tspan fill="#00f0ff">STARK INDUSTRIES DIVISION</tspan>
     </text>
   </g>
 </svg>

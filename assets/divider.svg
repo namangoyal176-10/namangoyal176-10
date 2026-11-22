@@ -1,31 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 48" width="100%" height="100%">
   <defs>
-    <linearGradient id="divLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#080B0A" stop-opacity="0" />
-      <stop offset="15%" stop-color="#26362F" stop-opacity="0.8" />
-      <stop offset="40%" stop-color="#00A878" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#00D492" stop-opacity="1" />
-      <stop offset="60%" stop-color="#00A878" stop-opacity="0.9" />
-      <stop offset="85%" stop-color="#26362F" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#080B0A" stop-opacity="0" />
+    <linearGradient id="avengerLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#05070e" stop-opacity="0" />
+      <stop offset="20%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#0284c7" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="1" />
+      <stop offset="60%" stop-color="#ef4444" stop-opacity="0.9" />
+      <stop offset="80%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#05070e" stop-opacity="0" />
     </linearGradient>
 
-    <linearGradient id="divSubLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#26362F" stop-opacity="0" />
-      <stop offset="25%" stop-color="#26362F" stop-opacity="0.4" />
-      <stop offset="50%" stop-color="#00D492" stop-opacity="0.3" />
-      <stop offset="75%" stop-color="#26362F" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#26362F" stop-opacity="0" />
+    <linearGradient id="avengerSubLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0" />
+      <stop offset="25%" stop-color="#1e293b" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.3" />
+      <stop offset="75%" stop-color="#ef4444" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="divGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
-    <filter id="photonGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="b1" />
-      <feGaussianBlur stdDeviation="5" result="b2" />
+    <filter id="repulsorGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1" />
+      <feGaussianBlur stdDeviation="6" result="b2" />
       <feMerge>
         <feMergeNode in="b2" />
         <feMergeNode in="b1" />
@@ -35,70 +30,70 @@
   </defs>
 
   <style>
-    .mono-div { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", monospace; }
+    .hud-mono-div { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", monospace; }
 
-    @keyframes photonSweep {
+    @keyframes repulsorSweep {
       0% { transform: translateX(80px); opacity: 0; }
-      10% { opacity: 1; }
-      48% { opacity: 0.9; }
-      52% { opacity: 0.9; }
-      90% { opacity: 1; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
       100% { transform: translateX(1120px); opacity: 0; }
     }
-    .photon-beam {
-      animation: photonSweep 4.5s ease-in-out infinite;
+    .repulsor-pulse {
+      animation: repulsorSweep 4.2s ease-in-out infinite;
     }
 
-    @keyframes centerBreathe {
-      0%, 100% { opacity: 0.7; }
-      50% { opacity: 1; filter: drop-shadow(0 0 5px #00D492); }
+    @keyframes emblemPulse {
+      0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 2px #00f0ff); }
+      50% { opacity: 1; filter: drop-shadow(0 0 8px #00f0ff); }
     }
-    .center-reticle {
-      animation: centerBreathe 2.8s ease-in-out infinite;
+    .center-emblem {
+      animation: emblemPulse 2.5s ease-in-out infinite;
     }
   </style>
 
   <!-- Secondary subtle baseline -->
-  <line x1="120" y1="24" x2="1080" y2="24" stroke="url(#divSubLineGrad)" stroke-width="3" />
+  <line x1="100" y1="24" x2="1100" y2="24" stroke="url(#avengerSubLine)" stroke-width="3" />
 
   <!-- Primary razor sharp axis line -->
-  <line x1="60" y1="24" x2="1140" y2="24" stroke="url(#divLineGrad)" stroke-width="1.2" />
+  <line x1="60" y1="24" x2="1140" y2="24" stroke="url(#avengerLineGrad)" stroke-width="1.4" />
 
-  <!-- Traveling Photon Laser Beam -->
-  <g class="photon-beam">
-    <ellipse cx="0" cy="24" rx="18" ry="1.8" fill="#F1F5F3" filter="url(#photonGlow)" />
-    <circle cx="0" cy="24" r="2.5" fill="#00D492" filter="url(#photonGlow)" />
+  <!-- Traveling Repulsor Energy Pulse -->
+  <g class="repulsor-pulse">
+    <ellipse cx="0" cy="24" rx="20" ry="2" fill="#ffffff" filter="url(#repulsorGlow)" />
+    <circle cx="0" cy="24" r="3" fill="#00f0ff" filter="url(#repulsorGlow)" />
   </g>
 
-  <!-- Terminal Ticks along the axis -->
-  <g stroke="#26362F" stroke-width="1" opacity="0.75">
-    <line x1="200" y1="18" x2="200" y2="30" />
-    <line x1="320" y1="20" x2="320" y2="28" />
-    <line x1="440" y1="20" x2="440" y2="28" />
-    <line x1="760" y1="20" x2="760" y2="28" />
-    <line x1="880" y1="20" x2="880" y2="28" />
-    <line x1="1000" y1="18" x2="1000" y2="30" />
+  <!-- HUD Tick Marks -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.8">
+    <line x1="220" y1="18" x2="220" y2="30" />
+    <line x1="340" y1="20" x2="340" y2="28" />
+    <line x1="460" y1="20" x2="460" y2="28" />
+    <line x1="740" y1="20" x2="740" y2="28" />
+    <line x1="860" y1="20" x2="860" y2="28" />
+    <line x1="980" y1="18" x2="980" y2="30" />
   </g>
 
-  <!-- Left Coordinate Bracket -->
-  <path d="M 180 18 L 170 18 L 170 30 L 180 30" fill="none" stroke="#00A878" stroke-width="1" opacity="0.6" />
-  <path d="M 1020 18 L 1030 18 L 1030 30 L 1020 30" fill="none" stroke="#00A878" stroke-width="1" opacity="0.6" />
+  <!-- Chevron Markers -->
+  <path d="M 190 19 L 180 24 L 190 29" fill="none" stroke="#00f0ff" stroke-width="1.2" opacity="0.7" />
+  <path d="M 1010 19 L 1020 24 L 1010 29" fill="none" stroke="#ef4444" stroke-width="1.2" opacity="0.7" />
 
-  <!-- Center Terminal Reticle Pill with Pulsing Glow -->
-  <g transform="translate(600, 24)" class="center-reticle">
-    <!-- Center Pill Frame -->
-    <rect x="-85" y="-12" width="170" height="24" rx="12" fill="#121C18" stroke="#26362F" stroke-width="1.2" />
-    <rect x="-81" y="-8" width="162" height="16" rx="8" fill="#080B0A" stroke="#00D492" stroke-width="0.8" stroke-opacity="0.4" />
+  <!-- Center Avengers Emblem Reticle -->
+  <g transform="translate(600, 24)" class="center-emblem">
+    <!-- Emblem Pill Frame -->
+    <rect x="-105" y="-13" width="210" height="26" rx="13" fill="#0f172a" stroke="#1e293b" stroke-width="1.4" />
+    <rect x="-101" y="-9" width="202" height="18" rx="9" fill="#05070e" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.4" />
 
-    <!-- Pulse Diamond -->
-    <polygon points="-65,0 -61,-4 -57,0 -61,4" fill="#00D492" filter="url(#divGlow)" />
+    <!-- Avengers Tiny Icon -->
+    <circle cx="-80" cy="0" r="6" fill="none" stroke="#00f0ff" stroke-width="1" />
+    <path d="M -80 -4 L -77 4 L -79 4 L -80 1 L -82 1 L -83 4 L -85 4 Z" fill="#f8fafc" />
+    <line x1="-80" y1="1" x2="-74" y2="1" stroke="#ef4444" stroke-width="0.8" />
 
     <!-- Text -->
-    <text x="5" y="4" text-anchor="middle" class="mono-div" font-size="10" font-weight="700" fill="#F1F5F3" letter-spacing="1.5">
-      SYS // 0xNG
+    <text x="7" y="4" text-anchor="middle" class="hud-mono-div" font-size="10" font-weight="700" fill="#f8fafc" letter-spacing="1.5">
+      AVENGERS // ASSEMBLE
     </text>
 
-    <!-- Right Pulse Dot -->
-    <circle cx="62" cy="0" r="2.5" fill="#00D492" filter="url(#divGlow)" />
+    <!-- Arc Reactor Core Dot -->
+    <circle cx="82" cy="0" r="3" fill="#00f0ff" filter="url(#repulsorGlow)" />
   </g>
 </svg>
