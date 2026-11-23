@@ -1,20 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 90" width="100%" height="100%">
   <defs>
-    <linearGradient id="avengerFooterBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#050811" />
+    <linearGradient id="cosmicFooterBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0b29" />
+      <stop offset="50%" stop-color="#0b102b" />
+      <stop offset="100%" stop-color="#1b0a24" />
     </linearGradient>
 
-    <linearGradient id="arcGlowLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#050811" stop-opacity="0" />
-      <stop offset="30%" stop-color="#0284c7" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#00f0ff" stop-opacity="1" />
-      <stop offset="70%" stop-color="#ef4444" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#050811" stop-opacity="0" />
+    <linearGradient id="footerLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#060714" stop-opacity="0" />
+      <stop offset="25%" stop-color="#00f0ff" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="1" />
+      <stop offset="75%" stop-color="#ff0077" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#060714" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="fArcGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <filter id="fBeamGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
@@ -22,30 +23,30 @@
   <style>
     .f-mono-ft { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", monospace; }
 
-    @keyframes footerBeam {
+    @keyframes beamSlideFt {
       0% { stroke-dashoffset: 1200; }
       100% { stroke-dashoffset: -1200; }
     }
-    .footer-beam-line {
-      stroke-dasharray: 240 960;
-      animation: footerBeam 3.8s linear infinite;
+    .footer-beam {
+      stroke-dasharray: 260 940;
+      animation: beamSlideFt 3.6s linear infinite;
     }
   </style>
 
-  <rect x="1" y="1" width="1198" height="88" rx="14" fill="url(#avengerFooterBg)" stroke="#1e293b" stroke-width="1.6" />
-  <line x1="10" y1="2" x2="1190" y2="2" stroke="url(#arcGlowLine)" stroke-width="1.8" />
-  <line x1="10" y1="2" x2="1190" y2="2" stroke="#00f0ff" stroke-width="2.8" class="footer-beam-line" filter="url(#fArcGlow)" />
+  <rect x="1" y="1" width="1198" height="88" rx="16" fill="url(#cosmicFooterBg)" stroke="#2e1065" stroke-width="1.8" />
+  <line x1="10" y1="2" x2="1190" y2="2" stroke="url(#footerLineGrad)" stroke-width="2" />
+  <line x1="10" y1="2" x2="1190" y2="2" stroke="#00f0ff" stroke-width="3" class="footer-beam" filter="url(#fBeamGlow)" />
 
   <g transform="translate(48, 50)">
-    <circle cx="0" cy="-4" r="5" fill="#00f0ff" filter="url(#fArcGlow)" />
-    <text x="18" y="0" class="f-mono-ft" font-size="14" font-weight="700" fill="#f8fafc">
-      WHATEVER IT TAKES · <tspan fill="#00f0ff">CODE</tspan> ⚡ · <tspan fill="#ef4444">BUILD</tspan> 🛡️ · <tspan fill="#f59e0b">SOLVE</tspan> 🔮 · <tspan fill="#00f0ff">SCALE 100%</tspan>
+    <circle cx="0" cy="-4" r="5.5" fill="#00f0ff" filter="url(#fBeamGlow)" />
+    <text x="20" y="0" class="f-mono-ft" font-size="14" font-weight="800" fill="#ffffff">
+      WHATEVER IT TAKES · <tspan fill="#00f0ff">CODE</tspan> ⚡ · <tspan fill="#ff0077">BUILD</tspan> 🛡️ · <tspan fill="#c084fc">SOLVE</tspan> 🔮 · <tspan fill="#facc15">SCALE 100%</tspan> 🚀
     </text>
   </g>
 
   <g transform="translate(1152, 50)" text-anchor="end">
-    <text x="0" y="0" class="f-mono-ft" font-size="13" font-weight="600" fill="#94a3b8">
-      ENGINEERED BY <tspan fill="#f8fafc" font-weight="700">NAMAN GOYAL</tspan> // <tspan fill="#00f0ff">AVENGERS PROTOCOL</tspan>
+    <text x="0" y="0" class="f-mono-ft" font-size="13" font-weight="700" fill="#cbd5e1">
+      ENGINEERED BY <tspan fill="#00f0ff">NAMAN GOYAL</tspan> // <tspan fill="#ff0077">AVENGERS PROTOCOL</tspan>
     </text>
   </g>
 </svg>
