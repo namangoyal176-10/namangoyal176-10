@@ -59,7 +59,7 @@
     <circle cx="0" cy="24" r="4" fill="#00f0ff" filter="url(#divRepulsorGlow)" />
   </g>
 
-  <!-- Left & Right Colorful Chevron Arrows -->
+  <!-- Left &amp; Right Colorful Chevron Arrows -->
   <path d="M 175 16 L 165 24 L 175 32" fill="none" stroke="#00f0ff" stroke-width="2.2" opacity="0.9" />
   <path d="M 1025 16 L 1035 24 L 1025 32" fill="none" stroke="#ff0055" stroke-width="2.2" opacity="0.9" />
 
