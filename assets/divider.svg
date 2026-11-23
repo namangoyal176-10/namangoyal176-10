@@ -56,21 +56,21 @@
   <path d="M 180 17 L 170 24 L 180 31" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.8" />
   <path d="M 1020 17 L 1030 24 L 1020 31" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.8" />
 
-  <!-- Center Avengers Emblem Reticle (High-Visibility 13px) -->
+  <!-- Center Avengers Emblem Reticle (Generous 270px width) -->
   <g transform="translate(600, 24)" class="center-emblem">
-    <rect x="-115" y="-14" width="230" height="28" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1.6" />
-    <rect x="-111" y="-10" width="222" height="20" rx="10" fill="#050811" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.4" />
+    <rect x="-135" y="-15" width="270" height="30" rx="15" fill="#0f172a" stroke="#1e293b" stroke-width="1.6" />
+    <rect x="-131" y="-11" width="262" height="22" rx="11" fill="#050811" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.4" />
 
     <!-- Avengers Tiny Icon -->
-    <circle cx="-90" cy="0" r="7" fill="none" stroke="#00f0ff" stroke-width="1.2" />
-    <path d="M -90 -4.5 L -87 4.5 L -89 4.5 L -90 1.5 L -92 1.5 L -93 4.5 L -95 4.5 Z" fill="#f8fafc" />
-    <line x1="-90" y1="1.5" x2="-84" y2="1.5" stroke="#ef4444" stroke-width="1" />
+    <circle cx="-105" cy="0" r="7" fill="none" stroke="#00f0ff" stroke-width="1.2" />
+    <path d="M -105 -4.5 L -102 4.5 L -104 4.5 L -105 1.5 L -107 1.5 L -108 4.5 L -110 4.5 Z" fill="#f8fafc" />
+    <line x1="-105" y1="1.5" x2="-99" y2="1.5" stroke="#ef4444" stroke-width="1" />
 
-    <text x="6" y="5" text-anchor="middle" class="div-mono" font-size="12.5" font-weight="800" fill="#f8fafc" letter-spacing="2px">
+    <text x="2" y="5" text-anchor="middle" class="div-mono" font-size="12" font-weight="800" fill="#f8fafc" letter-spacing="2px">
       AVENGERS // ASSEMBLE
     </text>
 
     <!-- Arc Reactor Core Dot -->
-    <circle cx="92" cy="0" r="3.5" fill="#00f0ff" filter="url(#repulsorGlow)" />
+    <circle cx="106" cy="0" r="3.5" fill="#00f0ff" filter="url(#repulsorGlow)" />
   </g>
 </svg>

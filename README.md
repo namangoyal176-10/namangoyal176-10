@@ -9,16 +9,19 @@
   </a>
 </p>
 
-<!-- Quick Action Badges -->
+<!-- Quick Action Badges with Authentic Profile Links -->
 <p align="center">
-  <a href="https://linkedin.com/in/namangoyal176-10">
+  <a href="https://www.linkedin.com/in/naman-goyal-a58b20380">
     <img src="https://img.shields.io/badge/LinkedIn-Naman%20Goyal-00f0ff?style=for-the-badge&logo=linkedin&logoColor=050811&labelColor=0f172a" alt="LinkedIn" />
+  </a>
+  <a href="https://leetcode.com/u/namangoyal_176/">
+    <img src="https://img.shields.io/badge/LeetCode-namangoyal__176-f59e0b?style=for-the-badge&logo=leetcode&logoColor=050811&labelColor=0f172a" alt="LeetCode" />
   </a>
   <a href="mailto:namangoyal176@gmail.com">
     <img src="https://img.shields.io/badge/Email-Say%20Hi-ef4444?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=0f172a" alt="Email" />
   </a>
   <a href="https://github.com/namangoyal176-10">
-    <img src="https://img.shields.io/badge/GitHub-namangoyal176--10-f59e0b?style=for-the-badge&logo=github&logoColor=050811&labelColor=0f172a" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-namangoyal176--10-38bdf8?style=for-the-badge&logo=github&logoColor=050811&labelColor=0f172a" alt="GitHub" />
   </a>
   <img src="https://komarev.com/ghpvc/?username=namangoyal176-10&label=S.H.I.E.L.D.%20Clearance&color=00f0ff&style=for-the-badge&labelColor=0f172a" alt="Profile Views" />
 </p>
@@ -34,7 +37,7 @@ const naman = {
   codename:    "Naman Goyal",
   role:        "AI/ML Engineer & Full-Stack Developer",
   education:   "B.Tech CSE (AI/ML) @ Mirai School of Technology",
-  location:    "Agra, Uttar Pradesh, India 🇮🇳",
+  location:    "Agra / Delhi-NCR, India 🇮🇳",
   superpowers: ["C++ (DSA)", "Node.js", "Express.js", "MongoDB", "React", "Python"],
   focus:       "Applied AI/ML, High-Concurrency Web Systems & Algorithmic Problem Solving",
   mantra:      "Whatever it takes. Code. Build. Solve. Scale."
@@ -81,7 +84,7 @@ const naman = {
       <p>
         <img src="https://img.shields.io/badge/Python-0f172a?style=flat-square&logo=python&logoColor=00f0ff" />
         <img src="https://img.shields.io/badge/Deep%20Learning-0f172a?style=flat-square&logoColor=00f0ff" />
-        <img src="https://img.shields.io/badge/OpenCV-0f172a?style=flat-square&logo=opencv&logoColor=00f0ff" />
+        <img src="https://img.shields.io/badge/OpenCV-0f172a?style=flat-square&logoColor=00f0ff" />
       </p>
       <a href="https://github.com/namangoyal176-10/Aikissan">💻 Mission Code</a>
     </td>
@@ -181,14 +184,17 @@ const naman = {
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/namangoyal176-10">
+  <a href="https://www.linkedin.com/in/naman-goyal-a58b20380">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-00f0ff?style=for-the-badge&logo=linkedin&logoColor=050811&labelColor=0f172a" alt="LinkedIn" />
+  </a>
+  <a href="https://leetcode.com/u/namangoyal_176/">
+    <img src="https://img.shields.io/badge/LeetCode-Profile-f59e0b?style=for-the-badge&logo=leetcode&logoColor=050811&labelColor=0f172a" alt="LeetCode" />
   </a>
   <a href="mailto:namangoyal176@gmail.com">
     <img src="https://img.shields.io/badge/Email-namangoyal176%40gmail.com-ef4444?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=0f172a" alt="Email" />
   </a>
   <a href="https://github.com/namangoyal176-10">
-    <img src="https://img.shields.io/badge/GitHub-Follow-f59e0b?style=for-the-badge&logo=github&logoColor=050811&labelColor=0f172a" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-Follow-38bdf8?style=for-the-badge&logo=github&logoColor=050811&labelColor=0f172a" alt="GitHub" />
   </a>
 </p>
 
